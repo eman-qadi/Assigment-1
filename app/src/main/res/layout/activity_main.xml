@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#91DBEA"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/year"
+            android:layout_width="107dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp" />
+
+        <Spinner
+            android:id="@+id/genre"
+            android:layout_width="120dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/titleAnser"
+            android:layout_width="112dp"
+            android:layout_height="68dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:autofillHints="" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:drawable/ic_search_category_default"
+            android:backgroundTint="#426995"
+            android:backgroundTintMode="src_in"
+            android:onClick="ActionSearch" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="422dp"
+        android:layout_height="504dp"
+        android:autofillHints="" />
+
+
+</LinearLayout>
